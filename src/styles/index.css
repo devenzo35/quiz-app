@@ -1,0 +1,253 @@
+
+:root{
+    --primary-color: rgb(55, 111, 233);
+}
+
+.home {
+
+    display: grid;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-image: url('../assets/crop.jfif');
+    background-size: cover;
+}
+
+.home h1 {
+
+    font-size: 5rem;
+    margin-top: 1rem;
+}
+
+.home h2{
+    font-size: 1.7rem;
+    height: fit-content;
+    margin-bottom: 1rem;
+}
+
+nav{
+    width: 100%;
+}
+
+.navbar{
+    background: rgb(203, 74, 74);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20rem;
+    border-radius: 2px;
+}
+
+.navbar__item {
+    
+    background: rgb(246, 246, 246);
+    border-radius: 3px;
+    text-decoration: none;
+    width: 90%;
+    height: 2.7rem;
+    display: grid;
+    place-items: center;
+    color: black;
+    border: 1px solid black;
+    transition: 500ms;
+    font-size: 1.4rem;
+    
+    
+}
+
+.navbar__item:hover {
+    background: rgb(233, 233, 233);
+    transform: scale(1.05);
+    font-size: 1.3rem;
+}
+
+.scoreList__btn{
+
+    background: var(--primary-color);
+    color: white;
+    padding: .7rem;
+    border-radius: 3px;
+    display: grid;
+    place-items: center;
+    width: 30%;
+    height: 3rem;
+    margin: auto;
+    
+
+}
+
+.quiz_screen{
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.quiz_screen h1{
+    font-size: 2rem;
+    text-align: start;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.quiz_screen-counter {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    left: 0;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.quizTable{
+    
+    background: var(--primary-color);
+    height: 70%;
+    padding: 0rem 1rem 1rem 1rem;
+    width: 80%;
+    margin: 0px auto 0px auto;
+    margin-top: 3rem;
+}
+
+.question {
+    font-size: 1rem;
+    border-bottom: 2px solid rgba(2, 50, 109, 0.407);
+    padding: .5rem;
+    font-weight: bold;
+}
+
+.answers_container{
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    height: 90%;
+    width: 100%;
+    margin: auto;
+}
+
+
+.answer{
+    background-color:white;
+    width: 80%;
+    height: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 500ms;
+    color: black;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.answer:hover {
+    background:white;
+    transform: scale(1.05);
+    font-size: 1.1rem;
+    
+}
+
+.end_quiz-screen{
+    background-image: url('../assets/BlackandwhiteJadedGuernseycow-size_restricted.gif');
+    background-size: cover;
+    background-position: -200px,400px;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    transition: 3s;
+
+}
+
+.end_quiz-message{
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
+.end-quiz-score{
+    font-size: 2rem;
+}
+
+.end_quiz-screen a{
+    background: var(--primary-color);
+    color: white;
+    padding: .7rem;
+    border-radius: 13px;
+    display: grid;
+    place-items: center;
+    width: 50%;
+    height: 6rem;
+    box-shadow: none;
+    font-size: 2rem;
+    margin-top: 3rem;
+
+}
+
+.scorelist{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+    overflow-y: auto;
+    
+}
+
+.scorelist_title{
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+table, th, td {
+    border: 1px solid blue;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.6rem;
+    background: var(--primary-color);
+    height: 3rem;
+    border-radius: 5px;
+    line-height: 50px;
+    margin-bottom: 3rem;
+  }
+
+.register_screen{
+    display:grid;
+    place-items: center;
+    height:100vh
+}
+
+.register_screen form{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    height: 50%;
+}
+
+.register_screen input{
+    padding: .5rem;
+    font-size: 2rem;
+    width: 90%;
+}
+
+.register_screen a{
+    padding: 1rem;
+    font-size: 2rem;
+    background: var(--primary-color);
+    color: white;
+    
+}
