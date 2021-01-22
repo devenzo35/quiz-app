@@ -18,7 +18,7 @@ export const Answers = React.memo( ({
   return (
     <>
       {answers === correct_answer ? (
-        <p onClick={handleCorrect} style={{background:'green'}} className="answer">
+        <p onClick={handleCorrect} className="answer">
           {answers}
         </p>
       ) : (
