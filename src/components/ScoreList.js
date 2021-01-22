@@ -29,9 +29,9 @@ export const ScoreList = () => {
           </tr>
         </thead>
         <tbody>
-          {state.map((el) => {
+          {state.map((el, i) => {
             return (
-              <tr key={el.name}>
+              <tr key={i}>
                 <td>{el.name}</td>
                 <td>{el.score}</td>
                 <td>
