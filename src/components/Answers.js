@@ -1,11 +1,12 @@
 import React from "react";
 
-export const Answers = React.memo( ({
+export const Answers = ({
   answers,
   correct_answer,
   setQuestionsNumbr,
   setScore,
 }) => {
+  
   const handleCorrect = () => {
     setScore((state) => state + 1);
     setQuestionsNumbr((state) => state + 1);
@@ -17,15 +18,15 @@ export const Answers = React.memo( ({
 
   return (
     <>
-      {answers === correct_answer ? (
-        <p onClick={handleCorrect} className="answer">
+      {answers[0] === correct_answer[0] ? (
+        <li onClick={handleCorrect} className="answer">
           {answers}
-        </p>
+        </li>
       ) : (
-        <p onClick={handleQuestions} className="answer">
+        <li onClick={handleQuestions} className="answer">
           {answers}
-        </p>
+        </li>
       )}
     </>
   );
-});
+};

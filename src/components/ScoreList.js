@@ -14,11 +14,15 @@ export const ScoreList = () => {
       });
       setstate(users);
     });
+
+    return ()=> {
+      setstate(state=>state)
+    }
   }, []);
 
   return (
     <div className="scorelist">
-      <h1 className="scorelist_title">TOP WORLD BEST MASTER PLAYERS</h1>
+      <h1 className="scorelist_title">TOP PLAYERS</h1>
 
       <table>
         <thead>

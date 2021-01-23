@@ -24,9 +24,8 @@ time, mark, audio, video {
 }
 
 html, body{
-
-	background: rgb(48, 48, 48);
-	color: white;
+	background: var(--dark-gray);
+	color: rgb(236, 236, 236);
 	font-family: Helvetica, Arial,  sans-serif;
 	overflow: hidden;
 }
