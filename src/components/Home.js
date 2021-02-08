@@ -7,12 +7,9 @@ export const Home = () => {
     <div className="home">
       
       <h1>QuizApp</h1>
-      
-      <div>
-        <h2>Choose a category</h2>
 
-        <CategoryNav />
-      </div>
+      <CategoryNav />
+    
 
       <Link className="scoreList__btn" to="/scorelist">
         <i className="fas fa-trophy"></i> score list

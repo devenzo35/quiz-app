@@ -18,12 +18,14 @@
 .home h1 {
   font-size: 5rem;
   margin-top: 1rem;
+  font-family: 'Nunito', sans-serif;
 }
 
 .home h2 {
   font-size: 1.7rem;
   height: fit-content;
   margin-bottom: 1rem;
+  font-family: 'Nunito', sans-serif;
 }
 
 nav {
@@ -268,15 +270,22 @@ td {
   }
 
   .home h1{
-    font-size: 3rem;
+    font-size: 6rem;
   }
 
   .navbar{
     flex-flow: row wrap;
     width: 40rem;
-    height: 18rem;
+    height: 20rem;
     margin-top: 2rem;
-    background: none;
+    border: 1px dashed white;
+    position: relative;
+    padding-top:2rem ;
+  }
+
+  .navbar h2{
+    position: absolute;
+    top: 8px;
   }
 
   .navbar__item{
@@ -305,6 +314,7 @@ td {
     height: 80%;
     background: var(--secondary-color);
     border-radius: 3px;
+    margin-top: -2rem;
   }
 
   .question {
@@ -348,10 +358,7 @@ td {
   }
 
   .quiz_screen-counter {
-    top: 25px;
-    right: 40px;
-    left: unset;
-    font-size: 3rem;
+    bottom: 1.5rem;
   }
 
   .scorelist{

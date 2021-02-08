@@ -4,7 +4,11 @@ import { Link } from "react-router-dom";
 export const CategoryNav = () => {
   return (
     <nav>
+
+      
       <ul className="navbar">
+      <h2>Choose a category</h2>
+      
         <Link className="navbar__item" to="/category/?name=videogames&ctgry=15">
           Videogames
         </Link>
