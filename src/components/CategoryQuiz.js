@@ -20,7 +20,7 @@ export const CategoryQuiz = () => {
     
     const interval = setInterval(() => {
       ref.current++;
-    }, 1100);
+    }, 1000);
     
     if (questionsNmbr === 20) {
       setUser((state) => ({ ...state, time: ref.current, score }));
