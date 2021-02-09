@@ -22,7 +22,7 @@ export const CategoryQuiz = () => {
       ref.current++;
     }, 1000);
     
-    if (questionsNmbr === 20) {
+    if (questionsNmbr === 21) {
       setUser((state) => ({ ...state, time: ref.current, score }));
       setShowEnd(true);
       clearInterval(interval);

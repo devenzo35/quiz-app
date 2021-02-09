@@ -278,9 +278,9 @@ td {
     width: 40rem;
     height: 20rem;
     margin-top: 2rem;
-    border: 1px dashed white;
     position: relative;
     padding-top:2rem ;
+    background: none;
   }
 
   .navbar h2{
