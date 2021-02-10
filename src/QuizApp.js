@@ -7,7 +7,8 @@ export const QuizApp = () => {
   const [user, setUser] = useState({
     name:sessionStorage.getItem('username'),
     score:null,
-    time:0
+    time:0,
+    isLoged: false
   })
   
   

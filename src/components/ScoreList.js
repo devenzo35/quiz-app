@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { db } from "../firebase/firebaseConfig";
+import { userInfo } from "../QuizApp";
 
 export const ScoreList = () => {
   const [state, setstate] = useState([]);
@@ -15,10 +16,13 @@ export const ScoreList = () => {
       setstate(users);
     });
 
-    return ()=> {
-      setstate(state=>state)
-    }
+    return () => {
+      setstate((state) => state);
+    };
   }, []);
+
+  
+  const isLoged= localStorage.getItem('isLoged')
 
   return (
     <div className="scorelist">
@@ -49,6 +53,14 @@ export const ScoreList = () => {
           })}
         </tbody>
       </table>
+
+      {!isLoged ? (
+        <span className="scorelist__warning">
+          Scorelist is only available for registered users
+        </span>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

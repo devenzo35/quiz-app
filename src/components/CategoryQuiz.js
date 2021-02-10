@@ -15,6 +15,8 @@ export const CategoryQuiz = () => {
   const ref = useRef(0);
   const { ctgry } = queryString.parse(window.location.search);
   const { data, loading } = useQuestions(ctgry, questionsNmbr);
+  
+  
 
   useEffect(() => {
     
@@ -43,6 +45,7 @@ export const CategoryQuiz = () => {
       db.collection("users").add(user);
     }
   }, [user, questionsNmbr]);
+
 
   if (loading) return <h1 className="loader">loading...</h1>;
 
